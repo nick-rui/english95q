@@ -3,6 +3,7 @@ import { rooms, getRoomById, getNeighbors } from '../data/rooms';
 import EmeraldCity from '@images/emeraldcity.jpeg';
 import FellowshipImg from '@images/characterstogether.png';
 import DorothySprite from '@images/dorothypizel.png';
+import MiniMap from './MiniMap';
 
 // Grid size (tiles)
 const GRID_WIDTH = 15;
@@ -125,7 +126,7 @@ const Game = () => {
   const [roomId, setRoomId] = useState(initialRoomId);
   const [playerPos, setPlayerPos] = useState(initialPosition);
   const [visited, setVisited] = useState(initialVisited);
-  const [showStory, setShowStory] = useState(true);
+  // Story is always visible now
 
   const room = useMemo(() => getRoomById(roomId), [roomId]);
   const neighbors = useMemo(() => getNeighbors(room), [room]);
@@ -146,7 +147,6 @@ const Game = () => {
   // Enter-room behavior
   useEffect(() => {
     setVisited((prev) => new Set(prev).add(roomId));
-    setShowStory(true);
   }, [roomId]);
 
   const transitionRoom = useCallback(
@@ -203,7 +203,6 @@ const Game = () => {
 
       // Move on floor
       setPlayerPos(target);
-      setShowStory(false);
     },
     [playerPos, neighbors, transitionRoom]
   );
@@ -215,9 +214,6 @@ const Game = () => {
       if (vec) {
         e.preventDefault();
         tryMove(vec.dx, vec.dy);
-      } else if (e.key === 'e' || e.key === 'E' || e.key === ' ') {
-        e.preventDefault();
-        setShowStory((s) => !s);
       }
     };
     window.addEventListener('keydown', onKeyDown);
@@ -295,23 +291,23 @@ const Game = () => {
 
         {/* Controls and hint */}
         <div className="text-center mt-3 text-xs text-[#8B7355] font-['Libre_Baskerville']">
-          Use Arrow keys or WASD to move • Press E or Space to show/hide story
+          Use Arrow keys or WASD to move
         </div>
 
-        {/* Story overlay */}
-        {showStory && (
-          <div className="mt-6 bg-white/95 rounded-lg border-l-6 border-[#FFD700] p-6 shadow-lg max-w-3xl mx-auto">
-            <h2 className="font-['Cinzel'] text-xl md:text-2xl text-[#2C1810] mb-2 font-bold">{room.title}</h2>
-            {room.subtitle && (
-              <h3 className="font-['Cinzel'] text-base md:text-lg text-[#654321] mb-4 italic">{room.subtitle}</h3>
-            )}
-            <div className="font-['Libre_Baskerville'] text-base leading-relaxed text-[#2C1810] whitespace-pre-line">
-              {room.narration}
-            </div>
-            <div className="mt-3 text-right text-xs text-[#8B7355]">Press E or Space to close</div>
+        {/* Story overlay - always visible */}
+        <div className="mt-6 bg-white/95 rounded-lg border-l-6 border-[#FFD700] p-6 shadow-lg max-w-3xl mx-auto">
+          <h2 className="font-['Cinzel'] text-xl md:text-2xl text-[#2C1810] mb-2 font-bold">{room.title}</h2>
+          {room.subtitle && (
+            <h3 className="font-['Cinzel'] text-base md:text-lg text-[#654321] mb-4 italic">{room.subtitle}</h3>
+          )}
+          <div className="font-['Libre_Baskerville'] text-base leading-relaxed text-[#2C1810] whitespace-pre-line">
+            {room.narration}
           </div>
-        )}
+        </div>
       </div>
+      
+      {/* MiniMap */}
+      <MiniMap currentRoomId={roomId} visited={visited} />
     </div>
   );
 };

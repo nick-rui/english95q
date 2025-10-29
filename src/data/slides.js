@@ -425,19 +425,37 @@ From the perspective of the road beneath Dorothy's feet.
 
 Written and developed by Nick and Kesavan
 ---
+Design Rationale — The Road Knows
 
-DESIGN RATIONALE
+• Maze Structure Over Linear Path:
+Instead of recreating Dorothy’s straight, canonical journey down the Yellow Brick Road, we designed a maze made up of interconnected rooms. This structure mirrors the Road’s fragmented memory—its stories don’t line up neatly, they twist, overlap, and circle back. The maze suggests that the Road’s consciousness isn’t chronological but layered; hundreds of years of footsteps blur together into a looping mental map. The design also fits the project’s argument about infrastructure: it gives the illusion of choice, but you’re always operating within boundaries someone else built. You can wander anywhere in the maze, but you can’t escape it.
 
-• Maze Structure Over Linear Path: Instead of a straight linear road mirroring Dorothy's canonical journey, we designed a maze-like structure of interconnected rooms. This choice reflects the Road's fragmented memory—stories branch, intersect, and loop back on themselves. The maze structure emphasizes that the Road's perspective contains multitudes: travelers from different eras converge, and no single narrative thread dominates.
+• Segmented Short Stories:
+Each room contains a self-contained vignette—these small fragments act like “memory tiles.” Together they build the sense of a collective history, but they never merge into a single story. That choice came from thinking about infrastructure as something that collects experiences without resolving them. The Road remembers everyone, but it can’t connect them. Structuring the game as scattered short pieces reinforces that: every traveler leaves a mark, but the Road can only hold the fragments.
 
-• Segmented Short Stories: Rather than one continuous narrative, each room presents a discrete story focused on a specific character or moment (Kella the brick-layer, Bolek's 23-year commute, the disappeared child). This design mirrors how infrastructure accumulates stories over time—each traveler leaves an imprint, but their stories remain distinct, remembered but never fully integrated into a single coherent history.
+• Interactive Embodiment (Playing as the Traveler):
+Players move a small Dorothy-like figure through the maze using arrow keys or WASD. That motion turns the act of reading into walking. It makes players physically perform the very thing the story is about—traversal. Every step becomes part of the Road’s sensory memory. The perspective flips: you’re both the traveler and the surface being walked on. We wanted that double sense of control and helplessness. You can move, but you can’t speak; you can explore, but you can’t change anything that’s happened. That’s exactly the Road’s condition.
 
-• Interactive Embodiment: Players control Dorothy's movement through pixel-art rooms, creating a sense of embodied exploration. This interactivity moves beyond passive reading to active traversal, echoing the Road's experience of being walked upon. 
+• Checkpoint System and Progress Tracking:
+The top corner displays “Checkpoints Visited: X / 13.” It’s a small UI element, but it changes how people read the story. Progress isn’t measured by plot advancement, but by spatial discovery. The player’s goal isn’t to finish—it’s to uncover. This turns reading into cartography: understanding the Road means visiting multiple perspectives rather than following a single narrative line. The more checkpoints you find, the fuller the Road’s memory becomes, but there’s no perfect order or 100% completion that gives closure. The Road, like history, is never “complete.”
 
-• Checkpoint System and Progress Tracking: The minimap visualizes progress as "checkpoints visited," transforming narrative completion into spatial exploration. This mechanic reframes story consumption as geographic discovery, emphasizing that understanding the Road requires visiting multiple perspectives rather than following a single linear path.
+• Pixel Art Aesthetic:
+We chose a simple, retro pixel-art style—flat colors, square tiles, visible gridlines. Partly, that’s a nod to how early computer games turned big stories into compressed systems. But it’s also a thematic contrast to Oz’s obsession with spectacle. In Baum’s and MGM’s versions, the Emerald City glows with illusion: green glass, gold light, polished surfaces. Our low-resolution world breaks that illusion. You can literally see the seams. It shows Oz not as fantasy but as infrastructure—bricks, mud, labor, geometry. It was also way easier to code this way, which felt fitting for a project about functionality over perfection.
 
-• Pixel Art Aesthetic: The retro pixel-art style creates aesthetic distance from the polished Emerald City spectacle described in the narrative. By presenting Oz through deliberately low-resolution graphics, we highlight the contrast between official narratives (spectacle, green-tinted glasses) and the Road's gritty, remembered reality (bleeding hands, worn grooves, forgotten travelers). It was also much easier to code up this way.
+• Color Palette and Visual Symbolism:
+The color design keeps the world grounded: shades of yellow for bricks, pale beige for background, dark brown for boundaries. The palette fades as you move away from the City—bright near the center, muted on the edges—suggesting how spectacle drains as you leave power’s core. The yellow itself becomes complicated: cheerful on the surface, but heavy once you realize it’s built from exhaustion. The few green tiles near the maze’s edge nod to the Emerald City’s tinted-glasses illusion, where color itself becomes a form of control.
 
+• Narrative Voice and Tone:
+The Road’s narration mixes mechanical observation with quiet emotion. It counts: miles, bricks, footsteps. But every number hides a feeling. The writing starts almost flat—technical, detached—and grows more self-aware as the player explores. The shift mirrors the Road realizing its own complicity: it helped build a world that depends on movement but never questions who has to move. The tone moves from description (“I am 1,847,293 bricks long”) to reflection (“I am complicit”). This gradual emotional evolution is the closest thing the project has to a plot arc.
+
+• Repetition and Loops:
+Certain paths lead you back to earlier rooms. We added that on purpose, both to mimic how real infrastructure repeats (roads, commutes, routines) and to reinforce the idea that history circles. The player experiences déjà vu—revisiting the same tiles, the same text blocks—but each time with new context. The repetition makes the maze feel alive, like memory looping over itself.
+
+• Theme of Embodied Knowledge:
+The biggest design goal was to make meaning happen through motion, not just text. You learn what kind of world this is by walking through it, not by reading an explanation. Each step adds to the Road’s story, and each story redefines what movement means. That’s why the maze doesn’t punish getting lost. Getting lost is the point—it’s how the Road remembers.
+
+• Technical Simplicity as Conceptual Honesty:
+We coded everything from scratch in vanilla HTML, CSS, and JavaScript. The simplicity isn’t just practical—it fits the theme. Infrastructure works best when it’s invisible, when you don’t notice the code that holds everything together. The straightforward structure mirrors the Road’s own honesty: durable, repetitive, quietly doing its job while carrying the weight of everyone else’s stories.
 
 ---
 

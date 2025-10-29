@@ -42,13 +42,13 @@ const MiniMap = ({ currentRoomId, visited }) => {
             <div
               key={`${x}-${y}`}
               className={`${getRoomSize(room)} ${getRoomColor(room)} rounded-sm border border-gray-400`}
-              title={room ? `${room.title} (${room.isVisited ? 'visited' : 'unvisited'})` : ''}
+              title={room ? `${room.title} checkpoint (${room.isVisited ? 'visited' : 'unvisited'})` : ''}
             />
           ))
         )}
       </div>
       <div className="text-xs text-gray-600 mt-2 text-center">
-        {visited.size}/{rooms.length} visited
+        {visited.size}/{rooms.length} checkpoints
       </div>
     </div>
   );

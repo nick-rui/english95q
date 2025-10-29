@@ -235,7 +235,7 @@ const Game = () => {
       <div className="max-w-5xl w-full px-4">
         <div className="flex items-center justify-between py-4">
           <h1 className="text-xl md:text-2xl font-['Cinzel'] text-[#2C1810] font-bold">The Road Knows</h1>
-          <div className="text-sm text-[#8B7355] font-['Libre_Baskerville']">Rooms visited: {visitedCount} / {rooms.length}</div>
+          <div className="text-sm text-[#8B7355] font-['Libre_Baskerville']">Checkpoints visited: {visitedCount} / {rooms.length}</div>
         </div>
 
         {/* Game area */}

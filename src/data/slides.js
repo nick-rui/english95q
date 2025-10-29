@@ -420,45 +420,28 @@ And the path remembers everything.`,
     title: "The Road Knows",
     subtitle: "Credits",
     image: "/assets/slide-backgrounds/slide13-credits.png",
-    content: `A retelling of L. Frank Baum's The Wonderful Wizard of Oz (1900)
-From the perspective of the road beneath Dorothy's feet
+    content: `A retelling of The Wizard of Oz.
+From the perspective of the road beneath Dorothy's feet.
 
-Created by [Your Name]
-English 95Q: The Many Wizards of Oz
-[Date]
+Written and developed by Nick and Kesavan
+---
+
+DESIGN RATIONALE
+
+• Maze Structure Over Linear Path: Instead of a straight linear road mirroring Dorothy's canonical journey, we designed a maze-like structure of interconnected rooms. This choice reflects the Road's fragmented memory—stories branch, intersect, and loop back on themselves. The maze structure emphasizes that the Road's perspective contains multitudes: travelers from different eras converge, and no single narrative thread dominates.
+
+• Segmented Short Stories: Rather than one continuous narrative, each room presents a discrete story focused on a specific character or moment (Kella the brick-layer, Bolek's 23-year commute, the disappeared child). This design mirrors how infrastructure accumulates stories over time—each traveler leaves an imprint, but their stories remain distinct, remembered but never fully integrated into a single coherent history.
+
+• Interactive Embodiment: Players control Dorothy's movement through pixel-art rooms, creating a sense of embodied exploration. This interactivity moves beyond passive reading to active traversal, echoing the Road's experience of being walked upon. 
+
+• Checkpoint System and Progress Tracking: The minimap visualizes progress as "checkpoints visited," transforming narrative completion into spatial exploration. This mechanic reframes story consumption as geographic discovery, emphasizing that understanding the Road requires visiting multiple perspectives rather than following a single linear path.
+
+• Pixel Art Aesthetic: The retro pixel-art style creates aesthetic distance from the polished Emerald City spectacle described in the narrative. By presenting Oz through deliberately low-resolution graphics, we highlight the contrast between official narratives (spectacle, green-tinted glasses) and the Road's gritty, remembered reality (bleeding hands, worn grooves, forgotten travelers). It was also much easier to code up this way.
+
 
 ---
 
-ARTIST'S STATEMENT
-
-In reimagining The Wizard of Oz from the Yellow Brick Road's perspective, I explore infrastructure as sentient witness—a narrative experiment that asks: what if the path itself had a story? While L. Frank Baum provided limited detail about the Road's origins in his 1900 novel, Henry Littlefield's influential 1964 analysis interprets the yellow bricks as representing the gold standard, with Dorothy's silver shoes symbolizing the free silver movement of the 1890s. Whether or not Baum intended this economic allegory, the Road functions as what Brian Larkin calls "poetic infrastructure"—material networks that shape not only physical movement but also social memory and political imagination.
-
-By giving the Road consciousness, my interactive narrative explores what Anne McClintock identifies as infrastructure's dual role: as functional tool and as instrument of surveillance and control. The Road becomes a witness to migration, labor, and the circulation of power—themes central to both the Populist era and contemporary infrastructure studies. The slideshow's linear format mirrors the Road's physical nature: one path, one direction, but infinite stories carried upon it.
-
-This project engages three primary Oz texts: Baum's novel (the source), the 1939 MGM film (the cultural touchstone), and Gregory Maguire's Wicked (1995), which demonstrates how alternative perspectives can reframe familiar narratives. My secondary sources—Littlefield's populist reading and Larkin's infrastructure theory—provide frameworks for understanding the Road as both historical symbol and living archive.
-
-The interactive medium allows users to embody the Road's limited agency: able to witness and remember, but unable to act directly. This design reflects infrastructure's paradox—omnipresent yet overlooked, powerful yet powerless. Each slide tells a distinct story—from Kella who laid the bricks, to Bolek's 23-year commute, to the child running barefoot in winter—creating a mosaic of voices and experiences that the Road has carried and remembered across centuries.
-
-Ultimately, "The Road Knows" argues that infrastructure is never neutral. Roads carry not just people but systems of power, economic exploitation, and social control. Yet they also carry hope, connection, and the possibility of change. By centering the Road's voice, I ask readers to consider: what stories do our paths hold? Who builds them, who controls them, and what would they say if they could speak?
-
----
-
-PRIMARY SOURCES
-• Baum, L. Frank. The Wonderful Wizard of Oz. George M. Hill Company, 1900.
-• Maguire, Gregory. Wicked: The Life and Times of the Wicked Witch of the West. ReganBooks, 1995.
-• The Wizard of Oz. Directed by Victor Fleming, Metro-Goldwyn-Mayer, 1939.
-
-SECONDARY SOURCES
-• Larkin, Brian. "The Politics and Poetics of Infrastructure." Annual Review of Anthropology, vol. 42, 2013, pp. 327-43.
-• Littlefield, Henry M. "The Wizard of Oz: Parable on Populism." American Quarterly, vol. 16, no. 1, 1964, pp. 47-58.
-• McClintock, Anne. Imperial Leather: Race, Gender, and Sexuality in the Colonial Contest. Routledge, 1995.
-• Rockoff, Hugh. "The 'Wizard of Oz' as a Monetary Allegory." Journal of Political Economy, vol. 98, no. 4, 1990, pp. 739-60.
-
----
-
-Thank you for walking with me.
-
-[Return to Start] [View Full Works Cited]`,
+Thank you for walking with us!`,
     theme: "Credits"
   }
 ];

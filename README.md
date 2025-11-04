@@ -206,7 +206,6 @@ This is an academic project for English 95Q. Content and implementation by [Your
 ## 🙏 Acknowledgments
 
 - L. Frank Baum for the original story
-- Professor [Name] for English 95Q
 - The infrastructure studies scholars cited in the artist's statement
 
 ---
